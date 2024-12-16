@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function setupToggle() {
     const toggleIcon = document.getElementById('theme-toggle');
+    if (!toggleIcon) {
+        console.error('Toggle icon not found');
+        return;
+    }
     toggleIcon.addEventListener('click', () => {
         const isDarkMode = document.documentElement.classList.toggle('dark-mode');
         toggleIcon.classList.toggle('dark-mode');
