@@ -1,0 +1,135 @@
+:root {
+    --bg-color: #f3f3f3;
+    --second-bg-color: #ddd;
+    --low-contrast-text: #1e1e21;
+    --high-contrast-text: #0e0e0e;
+}
+  
+.dark-mode {
+    --bg-color: #1e1e21;
+    --second-bg-color: #333;
+    --low-contrast-text: #ddd;
+    --high-contrast-text: #f6f6f6;
+}
+  
+body {
+    background-color: var(--bg-color);
+    color: var(--low-contrast-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--high-contrast-text);
+}
+
+p {
+    color: var(--low-contrast-text);
+    font-family: "Arial", sans-serif;
+    font-weight: lighter;
+    line-height: 1.5em;
+}
+
+/* Style for the blog posts */
+.blog-post {
+    max-width: 600px; /* Limits the width of the content */
+    margin: 0 auto; /* Centers the content */
+    padding: 20px; /* Adds spacing around the content */
+}
+
+.blog-post img {
+    max-width: 90%; /* Ensures the image fits within the container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra space below the image */
+    margin: 0 auto; /* Centers the image */
+}
+
+/* Style for the header */
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: center; /* Align vertically */
+}
+  
+.header-image img {
+width: 100%;
+height: auto;
+}
+
+.header-svg svg {
+    width: 100%;
+    height: auto;
+    stroke: var(--high-contrast-text);
+}
+
+.header {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--bg-color);
+    color: var(--high-contrast-text);
+}
+  
+.header h1 {
+    margin: 0;
+}
+
+.header a:link, .header a:visited {
+    color: var(--high-contrast-text);
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-color);
+    stroke: var(--high-contrast-text);
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+}
+  
+nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+  
+nav a {
+    text-decoration: none;
+    color: var(--high-contrast-text);
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+  
+nav a:hover {
+    background-color: var(--second-bg-color);
+    border-radius: 5px;
+}
+  
+.icon-toggle {
+    margin-left: 10px;
+}
+
+/* Style for the dark mode toggle switch */
+.icon-toggle {
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+  
+  .icon-toggle .icon {
+    display: none;
+  }
+  
+  .icon-toggle.light-mode .dark-icon {
+    display: inline;
+  }
+  
+  .icon-toggle.dark-mode .light-icon {
+    display: inline;
+  }
