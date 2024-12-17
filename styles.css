@@ -25,6 +25,7 @@ p {
     color: var(--low-contrast-text);
     font-family: "Arial", sans-serif;
     font-weight: lighter;
+    font-size: 16px;
     line-height: 1.5em;
 }
 
