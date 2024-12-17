@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (cachedHeader) {
         headerPlaceholder.innerHTML = cachedHeader;
     } else {
-        fetch('/riggerous_thinking/header.html')
+        fetch('/header.html')
             .then(response => response.text())
             .then(data => {
                 headerPlaceholder.innerHTML = data;
