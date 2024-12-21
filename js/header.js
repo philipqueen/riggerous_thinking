@@ -23,8 +23,13 @@ function setupToggle() {
     }
     toggleIcon.addEventListener('click', () => {
         const isDarkMode = document.documentElement.classList.toggle('dark-mode');
-        toggleIcon.classList.toggle('dark-mode');
-        toggleIcon.classList.toggle('light-mode');
+        if (isDarkMode) {
+            toggleIcon.classList.add('dark-mode');
+            toggleIcon.classList.remove('light-mode');
+        } else {
+            toggleIcon.classList.add('light-mode');
+            toggleIcon.classList.remove('dark-mode');
+        }
         localStorage.setItem('darkMode', isDarkMode);
     });
 }
