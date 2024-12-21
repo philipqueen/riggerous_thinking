@@ -1,8 +1,9 @@
 :root {
-    --bg-color: #f3f3f3;
+    --bg-color: #f7f7f7;
     --second-bg-color: #ddd;
     --low-contrast-text: #1e1e21;
     --high-contrast-text: #0e0e0e;
+    --link-color: #515176;
 }
   
 .dark-mode {
@@ -10,6 +11,7 @@
     --second-bg-color: #333;
     --low-contrast-text: #ddd;
     --high-contrast-text: #f6f6f6;
+    --link-color: #a7a7d2;
 }
   
 body {
@@ -27,6 +29,16 @@ p {
     font-weight: lighter;
     font-size: 16px;
     line-height: 1.5em;
+}
+
+a, a:link {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Style for the blog posts */
@@ -79,7 +91,7 @@ height: auto;
     text-decoration: none;
 }
 
-.header a:hover {
+.site-title a:hover {
     text-decoration: underline;
 }
 
@@ -111,6 +123,7 @@ nav a {
 nav a:hover {
     background-color: var(--second-bg-color);
     border-radius: 5px;
+    text-decoration: none;
 }
   
 .icon-toggle {
@@ -121,16 +134,16 @@ nav a:hover {
 .icon-toggle {
     cursor: pointer;
     font-size: 1.5em;
-  }
-  
-  .icon-toggle .icon {
-    display: none;
-  }
-  
-  .icon-toggle.light-mode .dark-icon {
-    display: inline;
-  }
-  
-  .icon-toggle.dark-mode .light-icon {
-    display: inline;
-  }
+}
+
+.icon-toggle .icon {
+display: none;
+}
+
+.icon-toggle.light-mode .dark-icon {
+display: inline;
+}
+
+.icon-toggle.dark-mode .light-icon {
+display: inline;
+}
