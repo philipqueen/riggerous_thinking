@@ -41,6 +41,13 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Style for main pages */
+.main-page {
+    max-width: 600px; /* Limits the width of the content */
+    margin: 0 auto; /* Centers the content */
+    padding: 20px; /* Adds spacing around the content */
+}
+
 /* Style for the blog posts */
 .blog-post {
     max-width: 600px; /* Limits the width of the content */
