@@ -184,3 +184,59 @@ display: inline;
 .icon-toggle.dark-mode .light-icon {
 display: inline;
 }
+
+/* Style for welcome graphics */
+.welcome-banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust for 2-4 blocks */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.welcome-block {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--high-contrast-text);
+    font-size: 2em;
+    border-radius: 8px;
+}
+
+.welcome-block a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.welcome-svg {
+    stroke: var(--link-color);
+    stroke-width: 0.5;
+    fill: none;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--high-contrast-text);
+    text-shadow: 1px 1px var(--bg-color);
+    font-size: 1.5em;
+    pointer-events: none; /* Ensures text doesn't interfere with SVG interaction */
+}
+
+.welcome-link {
+    text-decoration: none; /* Remove underline from link */
+    display: block; /* Make the link area cover the block */
+}
+
+.welcome-link:hover .welcome-svg {
+    stroke: var(--low-contrast-text);
+}
