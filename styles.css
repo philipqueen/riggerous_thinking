@@ -29,7 +29,7 @@ a:hover {
     text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, ol, ul {
     color: var(--high-contrast-text);
 }
 
@@ -71,6 +71,23 @@ p {
     text-decoration: underline;
 }
 
+/* Style for tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    padding: 1.5em;
+}
+
+thead {
+    color: var(--high-contrast-text);
+}
+
+tbody {
+    color: var(--low-contrast-text);
+    line-height: 2em;
+}
+
 /* Style for the header */
 .header-content {
     display: flex;
@@ -79,8 +96,8 @@ p {
 }
   
 .header-image img {
-width: 100%;
-height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .header-svg svg {
