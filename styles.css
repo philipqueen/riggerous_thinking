@@ -29,16 +29,20 @@ a:hover {
     text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6, ol, ul {
+h1, h2, h3, h4, h5, h6 {
     color: var(--high-contrast-text);
 }
 
-p {
+p, li, ol, ul {
     color: var(--low-contrast-text);
     font-family: "Arial", sans-serif;
     font-weight: lighter;
     font-size: 16px;
     line-height: 1.5em;
+}
+
+p strong, li strong, ol strong, ul strong {
+    font-weight: bold;
 }
 
 /* Style for main pages */
