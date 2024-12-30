@@ -19,6 +19,16 @@ body {
     color: var(--low-contrast-text);
 }
 
+a, a:link {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--high-contrast-text);
 }
@@ -29,16 +39,6 @@ p {
     font-weight: lighter;
     font-size: 16px;
     line-height: 1.5em;
-}
-
-a, a:link {
-    color: var(--link-color);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 /* Style for main pages */
@@ -60,6 +60,15 @@ a:hover {
     height: auto; /* Maintains aspect ratio */
     display: block; /* Removes extra space below the image */
     margin: 0 auto; /* Centers the image */
+}
+
+.blog-post h1 a, .blog-post h2 a, .blog-post h3 a, .blog-post h4 a, .blog-post h5 a, .blog-post h6 a {
+    text-decoration: none;
+    color: var(--high-contrast-text);
+}
+
+.blog-post h1 a:hover, .blog-post h2 a:hover, .blog-post h3 a:hover, .blog-post h4 a:hover, .blog-post h5 a:hover, .blog-post h6 a:hover {
+    text-decoration: underline;
 }
 
 /* Style for the header */
