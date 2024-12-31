@@ -1,16 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const version = '1.0.0';
+    const cachedVersion = localStorage.getItem('headerVersion');
     const cachedHeader = localStorage.getItem('headerHTML');
     const headerPlaceholder = document.getElementById('header-placeholder');
 
-    if (cachedHeader) {
+    if (cachedHeader && cachedVersion === version) {
         headerPlaceholder.innerHTML = cachedHeader;
         initNavMenu();
     } else {
-        fetch('/header.html')
+        fetch('/header.html?v=${version}')
             .then(response => response.text())
             .then(data => {
                 headerPlaceholder.innerHTML = data;
                 localStorage.setItem('headerHTML', data);
+                localStorage.setItem('headerVersion', version);
                 initNavMenu();
             });
     }
