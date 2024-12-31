@@ -1,6 +1,7 @@
 :root {
     --bg-color: #f7f7f7;
     --second-bg-color: #ddd;
+    --transparent-bg-color: #f7f7f7cc;
     --low-contrast-text: #1e1e21;
     --high-contrast-text: #0e0e0e;
     --link-color: #515176;
@@ -9,6 +10,7 @@
 .dark-mode {
     --bg-color: #1e1e21;
     --second-bg-color: #333;
+    --transparent-bg-color: #1e1e21cc;
     --low-contrast-text: #ddd;
     --high-contrast-text: #f6f6f6;
     --link-color: #a7a7d2;
@@ -162,6 +164,49 @@ nav a:hover {
     border-radius: 5px;
     text-decoration: none;
 }
+
+.nav-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--transparent-bg-color);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 30px;
+        z-index: 999;
+    }
+
+    .nav-toggle {
+        display: block;
+        color: var(--high-contrast-text);
+    }
+    
+    .nav-open nav {
+        display: flex;
+        color: var(--link-color);
+    }
+    
+    nav a {
+        color: var(--link-color);
+        font-size: 20px;
+        margin: 5px 0;
+        text-decoration: none;
+    }
+}
   
 .icon-toggle {
     margin-left: 10px;
@@ -199,7 +244,7 @@ display: inline;
     position: relative;
     background-size: cover;
     background-position: center;
-    height: 300px;
+    max-height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -229,12 +274,12 @@ display: inline;
     color: var(--high-contrast-text);
     text-shadow: 1px 1px var(--bg-color);
     font-size: 1.5em;
-    pointer-events: none; /* Ensures text doesn't interfere with SVG interaction */
+    pointer-events: none;
 }
 
 .welcome-link {
-    text-decoration: none; /* Remove underline from link */
-    display: block; /* Make the link area cover the block */
+    text-decoration: none;
+    display: block;
 }
 
 .welcome-link:hover .welcome-svg {
