@@ -54,6 +54,14 @@ p strong, li strong, ol strong, ul strong {
     padding: 20px; /* Adds spacing around the content */
 }
 
+.main-page img {
+    max-width: 90%; /* Ensures the image fits within the container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra space below the image */
+    margin: 0 auto; /* Centers the image */
+    padding: 10px 0; /* Adds spacing around the image */
+}
+
 /* Style for the blog posts */
 .blog-post {
     max-width: 600px; /* Limits the width of the content */
