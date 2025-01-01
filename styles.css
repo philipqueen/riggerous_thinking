@@ -62,6 +62,15 @@ p strong, li strong, ol strong, ul strong {
     padding: 10px 0; /* Adds spacing around the image */
 }
 
+.main-page h1 a, .main-page h2 a, .main-page h3 a, .main-page h4 a, .main-page h5 a, .main-page h6 a {
+    text-decoration: none;
+    color: var(--high-contrast-text);
+}
+
+.main-page h1 a:hover, .main-page h2 a:hover, .main-page h3 a:hover, .main-page h4 a:hover, .main-page h5 a:hover, .main-page h6 a:hover {
+    text-decoration: underline;
+}
+
 /* Style for the blog posts */
 .blog-post {
     max-width: 600px; /* Limits the width of the content */
