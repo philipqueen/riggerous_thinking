@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const version = '1.0.0';
+    const version = '1.0.1';
     const cachedVersion = localStorage.getItem('headerVersion');
     const cachedHeader = localStorage.getItem('headerHTML');
     const headerPlaceholder = document.getElementById('header-placeholder');
