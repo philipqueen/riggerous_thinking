@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
     setupToggle();
+    document.dispatchEvent(new CustomEvent('headerLoaded'));
 });
 
 function initNavMenu() {
