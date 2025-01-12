@@ -337,5 +337,6 @@ input[type="number"] {
 }
 
 .button:hover {
+    color: var(--high-contrast-text);
     background-color: var(--second-bg-color);
 }
