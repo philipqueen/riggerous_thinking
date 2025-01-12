@@ -2,6 +2,12 @@
 
 [Riggerous Thinking](https://riggerousthinking.com) is a website dedicated to highline rigging. Our focus is providing technical educational content for riggers of all skill levels. We hope to cover all aspects of the sport, from rigging fundamentals to advanced techniques, with a special focus on new and previously undocumented techniques. More than anything, we hope to promote rigorous thinking in the rigging space.
 
+## local test
+
+To test on your machine, start a simple webserver: `python -m http.server`
+
+Then, navigate to the http port printed in the terminal.
+
 ## architecture
 
 The website is a static site, meant to be as simple as possible to maintain and update, so I can focus on the content.
