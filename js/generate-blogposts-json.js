@@ -11,6 +11,9 @@ fs.readdir(blogDir, (err, files) => {
     const posts = [];
 
     files.forEach(file => {
+        if (!fs.lstatSync(filePath).isFile()) {
+            return;
+        }
         const filePath = path.join(blogDir, file);
         const content = fs.readFileSync(filePath, 'utf-8');
         const $ = cheerio.load(content);
