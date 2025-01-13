@@ -262,6 +262,7 @@ display: inline;
     background-size: cover;
     background-position: center;
     max-height: 300px;
+    width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
