@@ -1,0 +1,99 @@
+[
+  {
+    "title": "Choice of Split Connections",
+    "tags": [
+      "#theory",
+      "#split-connections",
+      "#soft-shackles",
+      "#grog-splices",
+      "#quicklinks"
+    ],
+    "url": "/blogposts/ChoiceOfSplitConnections.html"
+  },
+  {
+    "title": "Double Wrapped Grog Splices",
+    "tags": [
+      "#double-wrapped",
+      "#split-connections",
+      "#breaktests #grog-splices"
+    ],
+    "url": "/blogposts/DoubleWrappedGrogs.html"
+  },
+  {
+    "title": "Evaluating Boulders",
+    "tags": [
+      "#natural-anchors",
+      "#rigging",
+      "#rigging-concepts",
+      "#theory"
+    ],
+    "url": "/blogposts/EvaluatingBoulders.html"
+  },
+  {
+    "title": "Farmer Boy Full Break Tests",
+    "tags": [
+      "#farmer-boy",
+      "#diamond-braid",
+      "#tagline",
+      "#breaktests"
+    ],
+    "url": "/blogposts/FarmerBoyFullBreakTest.html"
+  },
+  {
+    "title": "Farmer Boy in Knots and Devices",
+    "tags": [
+      "#farmer-boy",
+      "#diamond-braid",
+      "#tagline",
+      "#breaktests"
+    ],
+    "url": "/blogposts/FarmerBoyKnotsDevices.html"
+  },
+  {
+    "title": "Complete Grog Breaktests",
+    "tags": [
+      "#grog-splices",
+      "#split-connections",
+      "#breaktests"
+    ],
+    "url": "/blogposts/GrogSpliceFullBreakTest.html"
+  },
+  {
+    "title": "Grog Splices",
+    "tags": [
+      "#grog-splices",
+      "#split-connections",
+      "#breaktests"
+    ],
+    "url": "/blogposts/GrogSplices.html"
+  },
+  {
+    "title": "Pull Rope Full Break Tests",
+    "tags": [
+      "#pull-rope",
+      "#double-braid",
+      "#tagline",
+      "#breaktests"
+    ],
+    "url": "/blogposts/PullRopeFullBreakTest.html"
+  },
+  {
+    "title": "Pull Rope in Knots and Devices",
+    "tags": [
+      "#pull-rope",
+      "#double-braid",
+      "#tagline",
+      "#breaktests"
+    ],
+    "url": "/blogposts/PullRopeKnotsDevices.html"
+  },
+  {
+    "title": "Splicing Grogs on Site",
+    "tags": [
+      "#grog-splices",
+      "#split-connections",
+      "#video"
+    ],
+    "url": "/blogposts/SplicingGrogsOnSite.html"
+  }
+]
