@@ -278,8 +278,7 @@ display: inline;
 
 .welcome-svg {
     stroke: var(--link-color);
-    stroke-width: 0.6;
-    vector-effect: non-scaling-stroke;
+    stroke-width: 1;
     stroke-dasharray: none;
     fill: none;
     width: 100%;
@@ -293,7 +292,7 @@ display: inline;
     transform: translate(-50%, -50%);
     color: var(--high-contrast-text);
     text-shadow: 1px 1px var(--bg-color);
-    font-size: 1.5em;
+    font-size: 5vw;
     pointer-events: none;
 }
 
