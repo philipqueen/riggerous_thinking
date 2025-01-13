@@ -6,6 +6,9 @@ on:
     paths:
       - 'blogposts/**' # Trigger on changes to blogposts directory
 
+permissions:
+    contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
