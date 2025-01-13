@@ -22,7 +22,7 @@ jobs:
       run: npm install cheerio
 
     - name: Generate blogposts.json
-      run: node generate-blogposts-json.js
+      run: node js/generate-blogposts-json.js
 
     - name: Commit changes
       run: |
