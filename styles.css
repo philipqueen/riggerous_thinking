@@ -249,23 +249,22 @@ display: inline;
 
 /* Style for welcome graphics */
 .welcome-banner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Adjust for 2-4 blocks */
+    display: flex;
     gap: 20px;
     max-width: 1200px;
+    max-height: 300px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .welcome-block {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    max-height: 300px;
-    width: fit-content;
+    flex: 1; /* Ensures both blocks take equal space */
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
     color: var(--high-contrast-text);
     font-size: 2em;
     border-radius: 8px;
