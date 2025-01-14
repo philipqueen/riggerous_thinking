@@ -1,5 +1,11 @@
 document.addEventListener('headerLoaded', () => {
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    let isDarkMode = localStorage.getItem('darkMode');
+
+    if (isDarkMode === null) {
+        isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    } else {
+        isDarkMode = isDarkMode === 'true';
+    }
     const toggleIcon = document.getElementById('theme-toggle');
     if (isDarkMode) {
         document.documentElement.classList.add('dark-mode')
