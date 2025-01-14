@@ -162,6 +162,12 @@ svg {
     width: 100%;
     height: auto;
 }
+
+.header-links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
   
 nav {
     display: flex;
@@ -203,7 +209,7 @@ nav a:hover {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        padding-top: 30px;
+        padding-top: 80px;
         z-index: 999;
     }
 
@@ -219,14 +225,14 @@ nav a:hover {
     
     nav a {
         color: var(--link-color);
-        font-size: 20px;
+        font-size: 30px;
         margin: 5px 0;
         text-decoration: none;
     }
 }
   
 .icon-toggle {
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 /* Style for the dark mode toggle switch */
@@ -350,7 +356,7 @@ input[type="number"] {
     margin-bottom: 20px;
     font-size: 16px;
     border: 1px solid var(--high-contrast-text);
-    border-radius: 4px;
+    border-radius: 8px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
     transition: border-color 0.3s;
 }
@@ -361,5 +367,60 @@ input[type="number"] {
 
 #search-input:focus {
     outline: 2px solid var(--link-color);
+}
+
+.card {
+    border: 3px solid var(--second-bg-color);
+    border-radius: 20px;
+    padding: 12px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.card-title a {
+    color: var(--high-contrast-text);
+    text-decoration: none;
+}
+
+.card-title a:hover {
+    text-decoration: underline;
+}
+
+.card-date {
+    color: var(--low-contrast-text);
+    font-family: "Arial", sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 1.5em;
+    opacity: 0.8;
+    padding: .3em .5em;
+}
+
+.card-tags .tag {
+    color: var(--link-color);
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5em;
+    cursor: pointer;
+    border: 1px solid var(--second-bg-color);
+    padding: .2em .5em;
+    border-radius: 8px;
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
+.card-tags .tag:hover {
+    text-decoration: underline;
 }
 

@@ -1,8 +1,10 @@
+const numPosts = 4;
+
 fetch('/blogposts.json')
     .then(response => response.json())
     .then(posts => {
         posts.sort((a, b) => new Date(b.date) - new Date(a.date));
-        const recentPosts = posts.slice(0, 5);
+        const recentPosts = posts.slice(0, numPosts);
 
         const container = document.getElementById('recent-posts');
         const heading = document.createElement('h2');
