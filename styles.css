@@ -4,7 +4,7 @@
     --transparent-bg-color: #f7f7f7cc;
     --low-contrast-text: #1e1e21;
     --high-contrast-text: #0e0e0e;
-    --link-color: #515176;
+    --link-color: #4a4a84;
 }
   
 .dark-mode {
@@ -318,7 +318,7 @@ input[type="number"] {
     font-family: "Arial", sans-serif;
     font-weight: lighter;
     font-size: 16px;
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
     color: var(--high-contrast-text);
     width: 100px;
     padding: 5px;
@@ -340,3 +340,27 @@ input[type="number"] {
     color: var(--high-contrast-text);
     background-color: var(--second-bg-color);
 }
+
+/* Style for Search input */
+
+#search-input {
+	background-color: var(--bg-color);
+    color: var(--high-contrast-text);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid var(--high-contrast-text);
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+#search-input::placeholder {
+    color: var(--low-contrast-text);
+}
+
+#search-input:focus {
+    outline: 2px solid var(--link-color);
+}
+
