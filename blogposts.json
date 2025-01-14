@@ -8,6 +8,7 @@
       "#grog-splices",
       "#quicklinks"
     ],
+    "date": "2023-02-21",
     "url": "/blogposts/ChoiceOfSplitConnections.html"
   },
   {
@@ -17,6 +18,7 @@
       "#split-connections",
       "#breaktests #grog-splices"
     ],
+    "date": "2023-05-17",
     "url": "/blogposts/DoubleWrappedGrogs.html"
   },
   {
@@ -27,6 +29,7 @@
       "#rigging-concepts",
       "#theory"
     ],
+    "date": "2025-01-13",
     "url": "/blogposts/EvaluatingBoulders.html"
   },
   {
@@ -37,6 +40,7 @@
       "#tagline",
       "#breaktests"
     ],
+    "date": "2022-10-19",
     "url": "/blogposts/FarmerBoyFullBreakTest.html"
   },
   {
@@ -47,6 +51,7 @@
       "#tagline",
       "#breaktests"
     ],
+    "date": "2022-10-19",
     "url": "/blogposts/FarmerBoyKnotsDevices.html"
   },
   {
@@ -56,6 +61,7 @@
       "#split-connections",
       "#breaktests"
     ],
+    "date": "2022-07-18",
     "url": "/blogposts/GrogSpliceFullBreakTest.html"
   },
   {
@@ -65,6 +71,7 @@
       "#split-connections",
       "#breaktests"
     ],
+    "date": "2022-07-18",
     "url": "/blogposts/GrogSplices.html"
   },
   {
@@ -75,6 +82,7 @@
       "#tagline",
       "#breaktests"
     ],
+    "date": "2022-12-02",
     "url": "/blogposts/PullRopeFullBreakTest.html"
   },
   {
@@ -85,6 +93,7 @@
       "#tagline",
       "#breaktests"
     ],
+    "date": "2022-12-02",
     "url": "/blogposts/PullRopeKnotsDevices.html"
   },
   {
@@ -94,6 +103,7 @@
       "#split-connections",
       "#video"
     ],
+    "date": "2022-07-18",
     "url": "/blogposts/SplicingGrogsOnSite.html"
   }
 ]
