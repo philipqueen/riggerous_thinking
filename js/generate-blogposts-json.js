@@ -20,10 +20,12 @@ fs.readdir(blogDir, (err, files) => {
 
         const title = $('title').text();
         const tags = $('meta[name="tags"]').attr('content');
+        const date = $('meta[name="date"]').attr('content');
 
         posts.push({
             title: title,
             tags: tags ? tags.split(',').map(tag => tag.trim()) : [],
+            date: date,
             url: `/blogposts/${file}`
         });
     });
