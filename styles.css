@@ -127,6 +127,10 @@ tbody {
     width: 100%;
     height: auto;
     stroke: var(--high-contrast-text);
+    background-color: var(--bg-color);
+    stroke-width: 1;
+    stroke-dasharray: none;
+    fill: none;
 }
 
 .header {
@@ -149,13 +153,6 @@ tbody {
 
 .site-title a:hover {
     text-decoration: underline;
-}
-
-svg {
-    width: 100%;
-    height: auto;
-    background-color: var(--bg-color);
-    stroke: var(--high-contrast-text);
 }
 
 .header img {
@@ -235,6 +232,38 @@ nav a:hover {
     margin-left: 5px;
 }
 
+/* Style for the footer */
+.footer-content {
+    display: flex;
+    justify-content: center; /* Adjust as needed */
+    align-items: center; /* Align vertically */
+}
+
+.footer-svg svg {
+    width: 100%;
+    height: auto;
+    stroke: var(--high-contrast-text);
+    background-color: var(--bg-color);
+    stroke-width: 0.2;
+    stroke-dasharray: none;
+    fill: none;
+}
+
+.footer {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--bg-color);
+    color: var(--high-contrast-text);
+}
+
+.footer a:link, .footer a:visited {
+    color: var(--link-color);
+    text-decoration: bold;
+    padding: 0 1%;
+}
+
 /* Style for the dark mode toggle switch */
 .icon-toggle {
     cursor: pointer;
@@ -258,7 +287,7 @@ display: inline;
     display: flex;
     gap: 20px;
     max-width: 1200px;
-    max-height: 300px;
+    max-height: 270px;
     margin: 0 auto;
     padding: 0 20px;
 }
