@@ -1,10 +1,10 @@
 :root {
-    --bg-color: #f7f7f7;
+    --bg-color:  #f4f4f4;
     --second-bg-color: #ddd;
     --transparent-bg-color: #f7f7f7cc;
     --low-contrast-text: #1e1e21;
     --high-contrast-text: #0e0e0e;
-    --link-color: #4a4a84;
+    --link-color: #3c3c82;
 }
   
 .dark-mode {
