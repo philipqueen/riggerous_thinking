@@ -1,11 +1,11 @@
 let postsData = [];
-
+// TODO: sort posts by most recent in main view
 fetch('/blogposts.json')
     .then(response => response.json())
     .then(posts => {
         postsData = posts;
         displayPosts(posts);
-    })
+    }) 
     .catch(error => console.error('Error fetching posts:', error));
 
 function displayPosts(posts) {
@@ -27,7 +27,7 @@ function displayPosts(posts) {
         const date = document.createElement('div');
         date.className = 'card-date';
         date.textContent = `Published on: ${post.date}`;
-
+        // TODO: add image to cards
         card.appendChild(title);
         card.appendChild(tags);
         card.appendChild(date);
